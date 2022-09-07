@@ -2,6 +2,10 @@ html {
     box-sizing: border-box;
 }
 
+* {
+    outline: 1px solid tomato;
+}
+
 
 :root {
     --praymare-text-color: #757575;
@@ -453,6 +457,7 @@ p {
 }
 
 .examples-img {
+    margin-top: 50px;
     padding-left: 0;
     display: flex;
     flex-wrap: wrap;
@@ -494,7 +499,7 @@ p {
 .btn {
     margin-bottom: 50px;
     width: 1200px;
-    display: inline-block;
+    display: inline;
     text-align: center;
 }
 
@@ -567,6 +572,7 @@ p {
 
 
 .contact-footer {
+    display: block;
     text-decoration: none;
     min-width: 231px;
     margin-bottom: 9px;
