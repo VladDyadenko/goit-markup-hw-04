@@ -316,7 +316,11 @@ p {
 /* команда */
 .team .team-link {
     background-color: var(--praymary-background-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    
+ 
+
+
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 38px;
 }
@@ -427,9 +431,7 @@ p {
     text-decoration: none;
     padding: 0;
     justify-content: center;
-    /* margin-left: auto;
-    margin-right: auto;
-    fill:var(--icon-color); */
+
 
 }
 .clients .client-link:not(:last-child) {
@@ -510,6 +512,13 @@ p {
     min-width: 130px;
 } 
 
+
+.example-list:hover,
+.example-list:hover {
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 16%), 0 4px 4px 0 rgba(0, 0, 0, 25%);
+
+}
+
 .button.examples {
     padding: 6px 22px;
     cursor: pointer;
@@ -518,16 +527,20 @@ p {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     background: var(--button-background-color);
     color: var(--title-text-color);
 }
-.button.examples:hover,
-.button.examples:focus {
+
+.button:hover,
+.button:focus {
     background: var(--logo-akcent-color);
-    border-radius: 4px;
     color: var(--praymary-background-color);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+}
+
+.button.examples:hover {
+
 }
 
 
@@ -633,6 +646,7 @@ p {
 
 .foter-secondary {
     padding-top: 12px;
+    height: 80px;
 }
 
 .footer-social {
@@ -660,6 +674,10 @@ p {
 .icon-link-footer {
     min-width: 206px;
 
+}
+
+.social-link-footer:not(:last-child) {
+    margin-right: 10px;
 }
 
 .footer-icon {
