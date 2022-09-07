@@ -15,6 +15,7 @@ html {
     --hero-background-color: #C4C4C4;
     --footer-color: #2F303A;
     --icon-color: #AFB1B8;
+    --social-footer-background: rgba(255, 255, 255, 0.1);
     
 
 
@@ -349,13 +350,11 @@ p {
 .social-conteiner {
     display: flex;
     max-width: 206px;
-    height: 44px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .team-icon {
-    display: block;
     padding: 12px;
     fill:var(--icon-color);
  
@@ -415,15 +414,10 @@ p {
     border: 1px solid var(--logo-akcent-color);
 }
 
-.icon-link {
-    min-width: 170px;
-
-}
 
 .client-link {
     padding: 16px 32px;
-    display: inline;
-    width: 170px;
+    min-width: 170px;
     border: 1px solid var(--icon-color);
 
 }
@@ -579,11 +573,13 @@ p {
 }
 
 .container.footer-site {
+    display: flex;
     padding-top: 0;
     padding-bottom: 0;
 }
 
 .footer-general {
+    display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -620,6 +616,56 @@ p {
 .contact-footer:hover,
 .contact-footer:focus {
     color: var(--logo-akcent-color);
+}
+
+.footer-titl {
+
+    margin-bottom: 20px;
+    color: var(--praymary-background-color);
+    text-transform: uppercase;
+    font-size: 14px;
+   
+}
+
+.footer-primary {
+    margin-right: 70px;
+}
+
+.foter-secondary {
+    padding-top: 12px;
+}
+
+.footer-social {
+    padding-left: 0%;
+}
+
+.social-link-footer {
+    list-style: none;
+    background-color: var(--social-footer-background);
+    border-radius: 50%;
+
+}
+
+.social-link-footer:hover {
+    background-color: var(--logo-akcent-color);
+}
+
+.footer-social-conteiner {
+    display: flex;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-link-footer {
+    min-width: 206px;
+
+}
+
+.footer-icon {
+    padding: 12px;
+    fill: var(--praymary-background-color);
+
 }
 
 
