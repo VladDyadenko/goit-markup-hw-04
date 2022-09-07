@@ -86,9 +86,10 @@ p {
 
 
 /* зміна кольору при наведенні курсору */
-.header-contacts .contact-info:hover,
-.header-contacts .contact-info:focus,
-.header-contacts .contact-info:active,
+/* .header-contacts .contact-info:hover, */
+.link:hover,
+.link:focus,
+.link:active,
 .header-contacts .current,
 .site-nav .nav-link:hover,
 .site-nav .nav-link:focus, 
@@ -317,12 +318,8 @@ p {
 .team .team-link {
     background-color: var(--praymary-background-color);
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-    
- 
-
-
-    border-radius: 0px 0px 4px 4px;
-    padding-bottom: 38px;
+        border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
 }
 
 .section.section-team {
@@ -336,7 +333,20 @@ p {
 .team {
     display: flex;
     padding-left: 0%;
+    
 }
+
+
+
+.social-conteiner {
+    display: flex;
+    max-width: 206px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 .conteiner-team {
     display: inline-block;
@@ -351,12 +361,7 @@ p {
     color: var(--title-text-color);
 }
 
-.social-conteiner {
-    display: flex;
-    max-width: 206px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .team-icon {
     padding: 12px;
@@ -539,10 +544,6 @@ p {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
 }
 
-.button.examples:hover {
-
-}
-
 
 .descr-type {
     min-width: 322px;
@@ -645,12 +646,14 @@ p {
 }
 
 .foter-secondary {
-    padding-top: 12px;
+    margin-top: 12px;
     height: 80px;
 }
 
 .footer-social {
+    display: flex;
     padding-left: 0%;
+
 }
 
 .social-link-footer {
