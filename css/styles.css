@@ -103,9 +103,12 @@ p {
 .header-contacts .contact:nth-child(1) {
     margin-right: 50px;
 }
-.site-nav .nav-list {
+
+.nav-link {
     padding: 32px 0;
 }
+
+
 
 .header-contacts {
     display: flex;
@@ -114,9 +117,12 @@ p {
     padding-left: 0;
     list-style: none;
 }
-.header-contacts .contact {
-    padding: 32px 0;
+
+.contact-info.link {
+    padding: 32px 0;    
 }
+
+
 .nav-list:not(:last-child) {
     margin-right: 50px;
 }
@@ -375,19 +381,21 @@ p {
     background-color: var(--praymary-background-color);
 }
 
-.team-icon:hover,
-.team-icon:focus {
-    fill: #FFFFFF;
-}
 .social-link:hover,
-.social-link:hover {
+.social-link:focus {
     background-color: #2196F3;
+}
+
+.social-link:hover> .links .team-icon,
+.social-link:focus>.links .team-icon {
+    fill: #FFFFFF;
 }
 
 
 .team .social-link:not(:last-child) {
     margin-right: 10px;
 }
+
 
 
 .descr-job {
@@ -416,12 +424,15 @@ p {
     fill: var(--icon-color);
 }
 
-.icon-link:hover> .client-icon {
-    fill: var(--logo-akcent-color);
-}
-.client-link:hover {
+.client-link:hover,
+.client-link:focus{
     border: 1px solid var(--logo-akcent-color);
 }
+
+.client-link:hover> .icon-link .client-icon {
+    fill: var(--logo-akcent-color);
+}
+
 
 
 .client-link {
